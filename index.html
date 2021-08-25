@@ -77,6 +77,44 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-spark-hbase大数据存储查询实践" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/bing.github.io/2021/08/25/spark-hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/" class="article-date">
+  <time class="dt-published" datetime="2021-08-25T08:23:29.000Z" itemprop="datePublished">2021-08-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/bing.github.io/2021/08/25/spark-hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/">spark+hbase大数据存储查询实践</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/chapterwang/bing.github.io/2021/08/25/spark-hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/" data-id="cksr8h9kr0002mguz9gb89ixf" data-title="spark+hbase大数据存储查询实践" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Solar-Hbase大数据存储查询实践" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/bing.github.io/2021/08/24/Solar-Hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/" class="article-date">
@@ -105,7 +143,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/chapterwang/bing.github.io/2021/08/24/Solar-Hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/" data-id="cksqut6v50000fguzg65902al" data-title="Solar+Hbase大数据存储查询实践" class="article-share-link">Teilen</a>
+      <a data-url="https://github.com/chapterwang/bing.github.io/2021/08/24/Solar-Hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/" data-id="cksr8h9kl0000mguz1yrj7zac" data-title="Solar+Hbase大数据存储查询实践" class="article-share-link">Teilen</a>
       
       
       
@@ -147,24 +185,24 @@
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Air air = <span class="keyword">new</span> Air();</span><br><span class="line">        AirSeller airSeller = <span class="keyword">new</span> AirSeller(air);</span><br><span class="line">        airSeller.fly();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20210823214201070.png" alt="image-20210823214201070"></p>
+<p><img src="/bing.github.io/chapterwang/bing.github.io/2021/08/23/java%E9%9D%99%E6%80%81-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20210823214201070.png" alt="image-20210823214201070"></p>
 <h2 id="JAVA动态代理"><a href="#JAVA动态代理" class="headerlink" title="JAVA动态代理"></a>JAVA动态代理</h2><h3 id="Java动态代理分两种，基于jdk的动态代理需要实现接口方法，基于CGLIB的动态代理则不需要实现接口方法，CGLIB代理的类基于接口字节码自动生成。（此处只描述基于jdk的动态代理）"><a href="#Java动态代理分两种，基于jdk的动态代理需要实现接口方法，基于CGLIB的动态代理则不需要实现接口方法，CGLIB代理的类基于接口字节码自动生成。（此处只描述基于jdk的动态代理）" class="headerlink" title="Java动态代理分两种，基于jdk的动态代理需要实现接口方法，基于CGLIB的动态代理则不需要实现接口方法，CGLIB代理的类基于接口字节码自动生成。（此处只描述基于jdk的动态代理）"></a>Java动态代理分两种，基于jdk的动态代理需要实现接口方法，基于CGLIB的动态代理则不需要实现接口方法，CGLIB代理的类基于接口字节码自动生成。（此处只描述基于jdk的动态代理）</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第一种实现</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DynamicProxy</span> <span class="keyword">implements</span> <span class="title">InvocationHandler</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Object object;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">DynamicProxy</span><span class="params">(Object object)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.object=object;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">        Object result = method.invoke(object,args);</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        AirImpl airImpl = <span class="keyword">new</span> Air();</span><br><span class="line">        AirImpl dynamicProxy = (AirImpl)Proxy.newProxyInstance(</span><br><span class="line">                airImpl.getClass().getClassLoader(),</span><br><span class="line">                airImpl.getClass().getInterfaces(),</span><br><span class="line">                <span class="keyword">new</span> DynamicProxy(airImpl));</span><br><span class="line">        dynamicProxy.fly();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20210823214831688.png" alt="image-20210823214831688"></p>
+<p><img src="/bing.github.io/chapterwang/bing.github.io/2021/08/23/java%E9%9D%99%E6%80%81-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20210823214831688.png" alt="image-20210823214831688"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第二种实现</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Programer</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 编程</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">code</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 调试</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">debug</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JavaProgramer</span> <span class="keyword">implements</span> <span class="title">Programer</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">JavaProgramer</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name=name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">code</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(name+<span class="string">&quot; is coding&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">debug</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(name+<span class="string">&quot; is debuging&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        JavaProgramer javaProgramer = <span class="keyword">new</span> JavaProgramer(<span class="string">&quot;xhh&quot;</span>);</span><br><span class="line">        Programer programer = (Programer) Proxy.newProxyInstance(javaProgramer.getClass().getClassLoader(),</span><br><span class="line">                javaProgramer.getClass().getInterfaces(),</span><br><span class="line">                (proxy, method, ars) -&gt; &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="string">&quot;code&quot;</span>.equals(method.getName()))&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;xhh is praying for the code&quot;</span>);</span><br><span class="line">                <span class="keyword">return</span> method.invoke(javaProgramer,ars);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (<span class="string">&quot;debug&quot;</span>.equals(method.getName()))&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;xhh is praying for the debug&quot;</span>);</span><br><span class="line">                <span class="keyword">return</span> method.invoke(javaProgramer,ars);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        programer.code();</span><br><span class="line">        programer.debug();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20210823215022600.png" alt="image-20210823215022600"></p>
+<p><img src="/bing.github.io/chapterwang/bing.github.io/2021/08/23/java%E9%9D%99%E6%80%81-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20210823215022600.png" alt="image-20210823215022600"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/chapterwang/bing.github.io/2021/08/23/java%E9%9D%99%E6%80%81-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" data-id="cksqut6ve0001fguzhv4c34hl" data-title="java静态/动态代理" class="article-share-link">Teilen</a>
+      <a data-url="https://github.com/chapterwang/bing.github.io/2021/08/23/java%E9%9D%99%E6%80%81-%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" data-id="cksr8h9kq0001mguz7e5j9ff0" data-title="java静态/动态代理" class="article-share-link">Teilen</a>
       
       
       
@@ -205,6 +243,10 @@
     <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/bing.github.io/2021/08/25/spark-hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/">spark+hbase大数据存储查询实践</a>
+          </li>
         
           <li>
             <a href="/bing.github.io/2021/08/24/Solar-Hbase%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E6%9F%A5%E8%AF%A2%E5%AE%9E%E8%B7%B5/">Solar+Hbase大数据存储查询实践</a>
